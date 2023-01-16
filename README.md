@@ -1,1 +1,41 @@
-# android_local_manifest_deb
+Build Instructions
+------------------
+Create a build directory
+
+	mkdir lineage
+	cd lineage
+
+Initialize your local repository using the LineageOS trees, use a command like this:
+
+    repo init -u git://github.com/LineageOS/android.git -b lineage-18.1
+
+Now create a local_manifests directory
+
+    mkdir .repo/local_manifests
+
+Copy my local manifest 'deb.xml' to the 'local_manifests' directory.
+
+    curl -L -o .repo/local_manifests/deb.xml -O -L https://raw.githubusercontent.com/hpnightowl/android_local_manifest_deb/lineage-18.1/deb.xml
+
+Then to sync up:
+
+    repo sync -c --force-sync
+
+OR, for those with limited bandwidth/storage:
+
+    repo sync -c --no-clone-bundle --no-tags --force-sync --optimized-fetch --prune
+
+
+Now start the build...
+
+```bash
+# Go to the root of the source tree...
+$
+# ...and run to prepare our devices list
+$ . build/envsetup.sh
+# ... now run
+$ brunch debx
+```
+
+
+Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for further information.
