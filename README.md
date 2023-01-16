@@ -13,9 +13,9 @@ Now create a local_manifests directory
 
     mkdir .repo/local_manifests
 
-Copy my local manifest 'deb.xml' to the 'local_manifests' directory.
+Copy my local manifest 'debx.xml' to the 'local_manifests' directory.
 
-    curl -L -o .repo/local_manifests/deb.xml -O -L https://raw.githubusercontent.com/hpnightowl/android_local_manifest_deb/lineage-18.1/deb.xml
+    curl -L -o .repo/local_manifests/debx.xml -O -L https://raw.githubusercontent.com/hpnightowl/android_local_manifest_deb/lineage-18.1/debx.xml
 
 Then to sync up:
 
