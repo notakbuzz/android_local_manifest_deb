@@ -3,4 +3,7 @@
   <project name="notakbuzz/android_device_asus_flox" path="device/asus/flox" revision="lineage-18.1-stagging" />
   <project name="LineageOS/android_kernel_google_msm" path="kernel/google/msm" revision="lineage-18.1" />
   <project name="hpnightowl/proprietary_vendor_asus" path="vendor/asus" revision="lineage-18.1" />
+  <!-- Nukes -->
+  <remove-project name="hardware/ril" />
+  <project path="hardware/ril" name="notakbuzz/hardware_ril" remote="github" />
 </manifest>
