@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="notakbuzz/android_device_asus_flox" path="device/asus/flox" revision="lineage-18.1-stagging" />
-  <project name="LineageOS/android_kernel_google_msm" path="kernel/google/msm" revision="lineage-18.1" />
-  <project name="hpnightowl/proprietary_vendor_asus" path="vendor/asus" revision="lineage-18.1" />
-  <!-- Nukes -->
-  <remove-project name="hardware/ril" />
-  <project path="hardware/ril" name="notakbuzz/hardware_ril" remote="github" />
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="followmsi/android_device_asus_flo" path="device/asus/flo" revision="los-19.1" />
+  <project name="followmsi/android_device_asus_deb" path="device/asus/deb" revision="los-19.1" />
+  <project name="followmsi/android_kernel_google_msm" path="kernel/google/msm" revision="followmsi-11" />
+  <project name="followmsi/android_vendor" path="vendor/asus" revision="flo-deb-lineage-19.1" />
+  <project path="device/qcom/sepolicy-legacy" name="LineageOS/android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="lineage-18.1-legacy" />
 </manifest>
+  
