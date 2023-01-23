@@ -7,7 +7,7 @@ Create a build directory
 
 Initialize your local repository using the LineageOS trees, use a command like this:
 
-    repo init -u https://github.com/LineageOS/android.git -b lineage-18.1
+    repo init -u https://github.com/LineageOS/android.git -b lineage-19.1
 
 Now create a local_manifests directory
 
@@ -15,7 +15,7 @@ Now create a local_manifests directory
 
 Copy my local manifest 'debx.xml' to the 'local_manifests' directory.
 
-    curl -L -o .repo/local_manifests/debx.xml -O -L https://raw.githubusercontent.com/hpnightowl/android_local_manifest_deb/lineage-18.1/debx.xml
+    curl -L -o .repo/local_manifests/debx.xml -O -L https://raw.githubusercontent.com/notakbuzz/android_local_manifest_deb/lineage-19.1/debx.xml
 
 Then to sync up:
 
@@ -34,7 +34,7 @@ $
 # ...and run to prepare our devices list
 $ . build/envsetup.sh
 # ... now run
-$ brunch debx
+$ brunch deb
 ```
 
 
